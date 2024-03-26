@@ -1,17 +1,16 @@
 <h1 align="center">Reviewz
 <p align="center"><i>Elevating Your Movie Rating Experience</i></p></h1>
 
+<p align="center"><a href="https://github.com/yashasgowda11/Reviewz"><img src="https://github.com/yashasgowda11/Reviewz/blob/main/Logo.png"/></a></p>
+
 ## Contents
   - [Github README PROFILE CATEGORY](#github-readme-profile-category)
-  - [List out `Awesome README Profile` Tools](#list-out-awesome-readme-profile-tools)
-  - [List out `Awesome README Profile` Articles](#list-out-awesome-readme-profile-articles)
-  - [Contribute](#contribute)
 
-## Website
+## Figma
 
-Link : https://awesome-github-readme-profile.netlify.app
+Design Link : http://surl.li/rypmn
 
-<a href="https://awesome-github-readme-profile.netlify.app"><img src="https://raw.githubusercontent.com/elangosundar/awesome-README-templates/master/awesome-github-profile.png" alt="Awesome README Templates" /></a>
+Interactive Prototype Link : http://surl.li/rypkt
 
 
 ## Github README PROFILE CATEGORY
