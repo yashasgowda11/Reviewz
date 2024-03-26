@@ -28,10 +28,6 @@ Interactive Prototype Link : http://surl.li/rypkt
 - <a href="https://github.com/MDPuneethReddy">Puneeth Reddy Motukuru Damodar</a>
 - <a href="https://github.com/benjaminfriedman1">Benjamin Friedman</a>
 
-## :pencil: License
-
-This project is licensed under [MIT](https://opensource.org/licenses/MIT) license.
-
 ## :man_astronaut: Show your support
 
 Give a ⭐️ if this project helped you!
