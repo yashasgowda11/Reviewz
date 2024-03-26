@@ -3,8 +3,17 @@
 
 <p align="center"><a href="https://github.com/yashasgowda11/Reviewz"><img src="https://github.com/yashasgowda11/Reviewz/blob/main/Logo.png"/></a></p>
 
-## Contents
-  - [Github README PROFILE CATEGORY](#github-readme-profile-category)
+## Introduction
+
+Our team project, "Reviewz," aims to revolutionize the movie rating experience by offering a platform where the gap between critic and viewer insights is bridged. Through comprehensive user research, brainstorming, and iterative prototyping, we identified the need for a simplified user interface and a balanced review system. Our proposal introduces a single-page application to streamline the process of submitting and finding reviews, emphasizing intuitive navigation, and reducing on-screen clutter. Additionally, we propose a novel approach to presenting movie ratings: combining critic and viewer scores into one cohesive percentage while still allowing users to delve into specific ratings by category. This ensures a balanced perspective, enabling users to make informed decisions based on a comprehensive understanding of a movie's reception. Through usability testing, we refined our concepts to ensure they cater to the needs and preferences of a diverse audience, prioritizing ease of use, spoiler prevention, and equitable representation of opinions in the cinematic community.
+
+## User Research Summary
+
+The user research conducted by the team involved interviews with a mix of movie critics, content creators, and general viewers to gather insights on UI improvements for movie review websites. The goal was to identify areas where the user interface could be made more intuitive and user-friendly, emphasizing the importance of balancing critic and viewer reviews, enhancing personalization, and improving accessibility. Participants expressed a desire for a streamlined review submission process, a cleaner interface with fewer ads, better management of spoiler content, and a more responsive and user-friendly mobile site. The feedback underscored the need for a platform that values both professional critiques and viewer opinions equally, suggesting enhancements like direct communication tools for community engagement and advanced search options to cater to specific user preferences. These insights informed "how might we" statements, focusing on creating a more engaging, balanced, and user-centric movie rating experience. 
+
+## Storyboard
+
+
 
 ## Figma
 
@@ -12,43 +21,12 @@ Design Link : http://surl.li/rypmn
 
 Interactive Prototype Link : http://surl.li/rypkt
 
+## Team 2
 
-## Github README PROFILE CATEGORY
-
-- [ ] [Art](art)
-- [ ] [Code Styled](code-styled)
-- [ ] [Creativity](creativity)
-- [ ] [Flowcharts](flowcharts)
-- [ ] [Default](default)
-- [ ] [Dynamic Realtime](dynamic-realtime)
-- [ ] [Elaborate](elaborate)
-- [ ] [Multimedia](multimedia)
-- [ ] [Short-and-sweet](short-and-sweet)
-- [ ] [Tabular](tabular)
-- [ ] [Pie Charts](pie-charts)
-
-# List out `Awesome README Profile` Tools
-
-- [Profile Summary For Github](https://profile-summary-for-github.com/search)
-- [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats) - Dynamically generated stats for your github readmes
-- [Profile Activity Generator](https://github.com/omidnikrah/profile-activity-generator) - Generate custom profile activity for your profile README
-- [All Dev Stats in Readme](https://github.com/anmol098/waka-readme-stats) - Are you an early 🐤 or a night 🦉? When are you most productive during the day? What languages you code in? And other stuff... Let's check out in your readme!
-- [Visitor Badge](https://visitor-badge.glitch.me/#docs) - Count visitors for your README.md, Issues, PRs in GitHub
-- [1990s style Visitor Counter](https://twitter.com/ryanlanciaux/status/1283755637126705152) - Add a 1990s style visitor counter with one line of markdown.
-- [Vists Count](https://pufler.dev/git-badges/) - Count visitors for README.md that can be used with shields.io
-- [Shields Project](https://shields.io/) - Use Shields to create profile badges, compatible with Simple Icons
-- [Simple Icons](https://github.com/simple-icons/simple-icons#cdn-usage) - SVG icons for popular brands for your README.md files
-- [Laravel GitHub Profile Visit Counter](https://github.com/caneco/laravel-github-profile-view-counter) - Add on your Laravel project a quick-badge to count your profile visits.
-- [Dev Metrics in Readme](https://github.com/athul/waka-readme) - [WakaTime](https://wakatime.com/) Weekly Metrics on your Profile Readme
-- [Current UTC time](https://github.com/jojoee/jojoee) - Example code of server that can serve dynamic content on GitHub profile
-- [Github Activity in README](https://github.com/jamesgeorge007/github-activity-readme) - Updates `README.md` with the recent GitHub activity of a user
-- [Github Profile README Generator](https://github.com/rahuldkjain/github-profile-readme-generator) - This tool provides an easy way to create github profile readme with latest addons like `visitors count`, `github stats` etc.
-- [Dynamic Profile Page On Github](https://github.com/umutphp/github-action-dynamic-profile-page) - Get dynamically generated list of your commits (of the repositories that the action is configured) on GitHub profile readme.
-- [npm package downloads](https://github.com/maddhruv/github-readme-npm-downloads) - Show all of your npm packages and their total downloads
-- [Feedparser](https://pythonhosted.org/feedparser/) - Convenient processing of RSS files
-- [Github Profile README Generator](https://github.com/arturssmirnovs/github-profile-readme-generator) - This project allows you to create nice and simple github profile readme files.
-- [Github Gist Count Generator](https://github.com/lifeparticle/Gist-Count) - Get gist count for your github readmes.
-
+- <a href="https://github.com/yashasgowda11">Yashas Nagesh Gowda</a>
+- <a href="https://github.com/nkyashaswini">Nilkod Kashinath Yashaswini</a>
+- <a href="https://github.com/MDPuneethReddy">Puneeth Reddy Motukuru Damodar</a>
+- <a href="https://github.com/benjaminfriedman1">Benjamin Friedman</a>
 
 ## :pencil: License
 
