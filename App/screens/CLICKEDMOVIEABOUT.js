@@ -1,6 +1,5 @@
 import * as React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
-import { Image } from "expo-image";
+import { StyleSheet, ScrollView, View, Text, Pressable, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
 import { Color, Border, FontFamily, FontSize, Padding } from "../GlobalStyles";
@@ -9,6 +8,7 @@ const CLICKEDMOVIEABOUT = () => {
   const navigation = useNavigation();
 
   return (
+    <ScrollView style={styles.container}>
     <View style={styles.clickedmovieAbout}>
       <View
         style={[
@@ -253,10 +253,15 @@ const CLICKEDMOVIEABOUT = () => {
         </View>
       </View>
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Color.lightThemeSystemSurface,
+  },
   barsHomeIndicatorPosition: {
     width: 375,
     backgroundColor: Color.colorBlack,
@@ -767,7 +772,7 @@ const styles = StyleSheet.create({
   },
   barsHomeIndicator: {
     top: 781,
-    height: 32,
+    height: 0,
     overflow: "hidden",
   },
   border: {
@@ -850,7 +855,7 @@ const styles = StyleSheet.create({
   },
   clickedmovieAbout: {
     flex: 1,
-    height: 812,
+    height: 3000,
     width: "100%",
     backgroundColor: Color.lightThemeSystemSurface,
   },
