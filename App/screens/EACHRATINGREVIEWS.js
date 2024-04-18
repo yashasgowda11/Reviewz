@@ -1,11 +1,13 @@
 import * as React from "react";
 import { StyleSheet, View, Pressable, Text } from "react-native";
 import { Image } from "expo-image";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { Color, FontSize, FontFamily, Border } from "../GlobalStyles";
 
 const EACHRATINGREVIEWS = () => {
   const navigation = useNavigation();
+  const route = useRoute();  // This hook returns the route object which has a params property
+  const { numStars } = route.params ?? {};  // Destructure to get customParam, defaulting to an empty object if params is undefined
 
   return (
     <View style={styles.eachRatingReviews}>
@@ -186,7 +188,7 @@ const EACHRATINGREVIEWS = () => {
         <Text style={[styles.more2, styles.moreTypo]}>...more</Text>
       </View>
       <Text style={[styles.starReviews, styles.yashasTypo]}>
-        4 Star reviews
+        {numStars} Star reviews
       </Text>
       <Pressable
         style={[styles.chevronLeftNormal, styles.chevronIconPosition]}

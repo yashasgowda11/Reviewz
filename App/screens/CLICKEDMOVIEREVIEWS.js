@@ -477,7 +477,8 @@ const CLICKEDMOVIEREVIEWS = () => {
         <Text style={[styles.text4, styles.textTypo]}>70%</Text>
         <Text style={[styles.text5, styles.textTypo]}>90%</Text>
         <View style={styles.starsParent}>
-          <View style={[styles.stars3, styles.starsLayout]}>
+          <Pressable style={[styles.stars3, styles.starsLayout]}
+           onPress={() => navigation.navigate('EACHRATINGREVIEWS', { numStars: '5' })}>
             <Image
               style={styles.starIconLayout}
               contentFit="cover"
@@ -503,11 +504,11 @@ const CLICKEDMOVIEREVIEWS = () => {
               contentFit="cover"
               source={require("../assets/star.png")}
             />
-          </View>
+          </Pressable>
           <Pressable
             style={[styles.stars4, styles.starsLayout]}
-            onPress={() => navigation.navigate("EACHRATINGREVIEWS")}
-          >
+            onPress={() => navigation.navigate('EACHRATINGREVIEWS', { numStars: '4' })}
+            >
             <Image
               style={styles.starIconLayout}
               contentFit="cover"
@@ -534,7 +535,9 @@ const CLICKEDMOVIEREVIEWS = () => {
               source={require("../assets/star2.png")}
             />
           </Pressable>
-          <View style={[styles.stars5, styles.starsLayout]}>
+          <Pressable
+           style={[styles.stars5, styles.starsLayout]}
+           onPress={() => navigation.navigate('EACHRATINGREVIEWS', { numStars: '3' })}>
             <Image
               style={styles.starIconLayout}
               contentFit="cover"
@@ -560,8 +563,9 @@ const CLICKEDMOVIEREVIEWS = () => {
               contentFit="cover"
               source={require("../assets/star2.png")}
             />
-          </View>
-          <View style={[styles.stars6, styles.starsLayout]}>
+          </Pressable>
+          <Pressable style={[styles.stars6, styles.starsLayout]}
+           onPress={() => navigation.navigate('EACHRATINGREVIEWS', { numStars: '2' })}>
             <Image
               style={styles.starIconLayout}
               contentFit="cover"
@@ -587,8 +591,9 @@ const CLICKEDMOVIEREVIEWS = () => {
               contentFit="cover"
               source={require("../assets/star2.png")}
             />
-          </View>
-          <View style={[styles.stars7, styles.starsLayout]}>
+          </Pressable>
+          <Pressable style={[styles.stars7, styles.starsLayout]}
+           onPress={() => navigation.navigate('EACHRATINGREVIEWS', { numStars: '1' })}>
             <Image
               style={styles.starIconLayout}
               contentFit="cover"
@@ -614,7 +619,7 @@ const CLICKEDMOVIEREVIEWS = () => {
               contentFit="cover"
               source={require("../assets/star2.png")}
             />
-          </View>
+          </Pressable>
         </View>
         <Image
           style={[styles.clickedmovieReviewsItem, styles.groupIconLayout]}
