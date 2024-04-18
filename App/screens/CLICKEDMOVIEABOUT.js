@@ -9,250 +9,250 @@ const CLICKEDMOVIEABOUT = () => {
 
   return (
     <ScrollView style={styles.container}>
-    <View style={styles.clickedmovieAbout}>
-      <View
-        style={[
-          styles.clickedmovieAboutChild,
-          styles.barsHomeIndicatorPosition,
-        ]}
-      />
-      <View style={[styles.clickedmovieAboutInner, styles.groupWrapperLayout]}>
-        <View style={[styles.groupWrapper, styles.groupWrapperLayout]}>
-          <View style={[styles.rectangleParent, styles.groupWrapperLayout]}>
-            <Image
-              style={[styles.groupChild, styles.groupChildLayout]}
-              contentFit="cover"
-              source={require("../assets/rectangle-141.png")}
-            />
-            <Image
-              style={[styles.groupItem, styles.groupChildLayout]}
-              contentFit="cover"
-              source={require("../assets/rectangle-161.png")}
-            />
-            <Image
-              style={[styles.groupInner, styles.groupChildLayout]}
-              contentFit="cover"
-              source={require("../assets/rectangle-151.png")}
-            />
-            <Image
-              style={[styles.rectangleIcon, styles.groupChildLayout]}
-              contentFit="cover"
-              source={require("../assets/rectangle-171.png")}
-            />
-            <Image
-              style={[styles.groupChild1, styles.groupChildLayout]}
-              contentFit="cover"
-              source={require("../assets/rectangle-181.png")}
-            />
+      <View style={styles.clickedmovieAbout}>
+        <View
+          style={[
+            styles.clickedmovieAboutChild,
+            styles.barsHomeIndicatorPosition,
+          ]}
+        />
+        <View style={[styles.clickedmovieAboutInner, styles.groupWrapperLayout]}>
+          <View style={[styles.groupWrapper, styles.groupWrapperLayout]}>
+            <View style={[styles.rectangleParent, styles.groupWrapperLayout]}>
+              <Image
+                style={[styles.groupChild, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-141.png")}
+              />
+              <Image
+                style={[styles.groupItem, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-161.png")}
+              />
+              <Image
+                style={[styles.groupInner, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-151.png")}
+              />
+              <Image
+                style={[styles.rectangleIcon, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-171.png")}
+              />
+              <Image
+                style={[styles.groupChild1, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-181.png")}
+              />
+            </View>
           </View>
         </View>
-      </View>
-      <Text style={[styles.similarlyRatedMovie, styles.cast1Typo1]}>
-        Similarly rated movie
-      </Text>
-      <Pressable
-        style={[styles.arrowLeftLarge, styles.arrowLeftLargeLayout]}
-        onPress={() => navigation.navigate("HOME")}
-      >
-        <Image
-          style={[styles.icon, styles.iconLayout1]}
-          contentFit="cover"
-          source={require("../assets/arrowleftlarge.png")}
-        />
-      </Pressable>
-      <Text style={styles.kingdom}>Kingdom</Text>
-      <View style={[styles.frameView, styles.frameLayout]}>
-        <View style={styles.framePosition}>
+        <Text style={[styles.similarlyRatedMovie, styles.cast1Typo1]}>
+          Similarly rated movie
+        </Text>
+        <Pressable
+          style={[styles.arrowLeftLarge, styles.arrowLeftLargeLayout]}
+          onPress={() => navigation.navigate("HOME")}
+        >
           <Image
-            style={[styles.frameChild, styles.framePosition]}
+            style={[styles.icon, styles.iconLayout1]}
             contentFit="cover"
-            source={require("../assets/frame-287.png")}
+            source={require("../assets/arrowleftlarge.png")}
           />
-          <LinearGradient
-            style={[styles.frameGroup, styles.frameLayout]}
-            locations={[0, 1]}
-            colors={["rgba(0, 0, 0, 0.4)", "rgba(0, 0, 0, 0)"]}
+        </Pressable>
+        <Text style={styles.kingdom}>Kingdom</Text>
+        <View style={[styles.frameView, styles.frameLayout]}>
+          <View style={styles.framePosition}>
+            <Image
+              style={[styles.frameChild, styles.framePosition]}
+              contentFit="cover"
+              source={require("../assets/frame-287.png")}
+            />
+            <LinearGradient
+              style={[styles.frameGroup, styles.frameLayout]}
+              locations={[0, 1]}
+              colors={["rgba(0, 0, 0, 0.4)", "rgba(0, 0, 0, 0)"]}
+            >
+              <View style={styles.parent}>
+                <Text style={[styles.text, styles.m18Typo1]}>2019</Text>
+                <View style={styles.m18Wrapper}>
+                  <Text style={[styles.m18, styles.m18Typo]}>M18</Text>
+                </View>
+                <Text style={[styles.season, styles.m18Typo1]}>1 Season</Text>
+              </View>
+              <View style={styles.frameContainer}>
+                <View style={styles.netflixParent}>
+                  <Text style={[styles.netflix, styles.netflixTypo]}>
+                    NETFLIX
+                  </Text>
+                  <Text style={[styles.original, styles.netflixTypo]}>
+                    ORIGINAL
+                  </Text>
+                </View>
+                <Image
+                  style={styles.image35Icon}
+                  contentFit="cover"
+                  source={require("../assets/image-35.png")}
+                />
+              </View>
+              <View style={styles.viralPlagueParent}>
+                <Text style={styles.koreanTypo}>Viral Plague</Text>
+                <Image
+                  style={styles.frameItem}
+                  contentFit="cover"
+                  source={require("../assets/ellipse-24.png")}
+                />
+                <Text style={[styles.korean, styles.koreanTypo]}>Korean</Text>
+                <Image
+                  style={styles.frameItem}
+                  contentFit="cover"
+                  source={require("../assets/ellipse-24.png")}
+                />
+                <Text style={[styles.korean, styles.koreanTypo]}>
+                  Period Piece
+                </Text>
+              </View>
+            </LinearGradient>
+          </View>
+        </View>
+        <Text style={styles.about}>
+          <Text style={[styles.about1, styles.about1Typo]}>About</Text>
+          <Text style={styles.text1}>{`    `}</Text>
+        </Text>
+        <View style={styles.groupParent}>
+          <Pressable
+            style={[styles.antDesignplusOutlinedParent, styles.wrapperLayout]}
+            onPress={() => navigation.navigate("CLICKEDMOVIEMYLISTCLICKED")}
           >
-            <View style={styles.parent}>
-              <Text style={[styles.text, styles.m18Typo1]}>2019</Text>
-              <View style={styles.m18Wrapper}>
-                <Text style={[styles.m18, styles.m18Typo]}>M18</Text>
-              </View>
-              <Text style={[styles.season, styles.m18Typo1]}>1 Season</Text>
-            </View>
-            <View style={styles.frameContainer}>
-              <View style={styles.netflixParent}>
-                <Text style={[styles.netflix, styles.netflixTypo]}>
-                  NETFLIX
-                </Text>
-                <Text style={[styles.original, styles.netflixTypo]}>
-                  ORIGINAL
-                </Text>
-              </View>
-              <Image
-                style={styles.image35Icon}
-                contentFit="cover"
-                source={require("../assets/image-35.png")}
-              />
-            </View>
-            <View style={styles.viralPlagueParent}>
-              <Text style={styles.koreanTypo}>Viral Plague</Text>
-              <Image
-                style={styles.frameItem}
-                contentFit="cover"
-                source={require("../assets/ellipse-24.png")}
-              />
-              <Text style={[styles.korean, styles.koreanTypo]}>Korean</Text>
-              <Image
-                style={styles.frameItem}
-                contentFit="cover"
-                source={require("../assets/ellipse-24.png")}
-              />
-              <Text style={[styles.korean, styles.koreanTypo]}>
-                Period Piece
+            <Image
+              style={[
+                styles.antDesignplusOutlinedIcon,
+                styles.arrowLeftLargeLayout,
+              ]}
+              contentFit="cover"
+              source={require("../assets/antdesignplusoutlined.png")}
+            />
+            <Text style={styles.myList}>My List</Text>
+          </Pressable>
+          <View style={[styles.groupContainer, styles.recommendLayout]}>
+            <View style={[styles.recommendWrapper, styles.recommendLayout]}>
+              <Text style={[styles.recommend, styles.recommendLayout]}>
+                Recommend
               </Text>
             </View>
-          </LinearGradient>
+          </View>
+          <Image
+            style={[styles.vectorIcon, styles.iconLayout]}
+            contentFit="cover"
+            source={require("../assets/vector8.png")}
+          />
+          <Pressable
+            style={[styles.wrapper, styles.wrapperLayout]}
+            onPress={() => navigation.navigate("REVIEW")}
+          >
+            <Image
+              style={styles.iconLayout1}
+              contentFit="cover"
+              source={require("../assets/star-17.png")}
+            />
+          </Pressable>
         </View>
-      </View>
-      <Text style={styles.about}>
-        <Text style={[styles.about1, styles.about1Typo]}>About</Text>
-        <Text style={styles.text1}>{`    `}</Text>
-      </Text>
-      <View style={styles.groupParent}>
+        <Text style={[styles.review, styles.cast1Typo]}>Review</Text>
+        <View style={styles.ratingComponent}>
+          <Image
+            style={[styles.ratingComponentChild, styles.ratingChildLayout]}
+            contentFit="cover"
+            source={require("../assets/star-121.png")}
+          />
+          <Image
+            style={[styles.ratingComponentItem, styles.ratingChildLayout]}
+            contentFit="cover"
+            source={require("../assets/star-131.png")}
+          />
+          <Image
+            style={[styles.ratingComponentInner, styles.ratingChildLayout]}
+            contentFit="cover"
+            source={require("../assets/star-141.png")}
+          />
+          <Image
+            style={[styles.starIcon, styles.ratingChildLayout]}
+            contentFit="cover"
+            source={require("../assets/star-151.png")}
+          />
+          <Image
+            style={[styles.ratingComponentChild1, styles.capIconPosition]}
+            contentFit="cover"
+            source={require("../assets/star-161.png")}
+          />
+        </View>
+        <Text style={[styles.reviews, styles.matchLayout]}>800 reviews</Text>
+        <Text style={[styles.match, styles.timeTypo]}>90 % Match</Text>
+        <Text
+          style={[styles.dramaAction, styles.inTheHeartPosition]}
+        >{`Drama & Action`}</Text>
         <Pressable
-          style={[styles.antDesignplusOutlinedParent, styles.wrapperLayout]}
-          onPress={() => navigation.navigate("CLICKEDMOVIEMYLISTCLICKED")}
+          style={styles.vector}
+          onPress={() => navigation.navigate("HOME")}
         >
           <Image
-            style={[
-              styles.antDesignplusOutlinedIcon,
-              styles.arrowLeftLargeLayout,
-            ]}
+            style={[styles.icon2, styles.iconLayout]}
             contentFit="cover"
-            source={require("../assets/antdesignplusoutlined.png")}
+            source={require("../assets/vector9.png")}
           />
-          <Text style={styles.myList}>My List</Text>
         </Pressable>
-        <View style={[styles.groupContainer, styles.recommendLayout]}>
-          <View style={[styles.recommendWrapper, styles.recommendLayout]}>
-            <Text style={[styles.recommend, styles.recommendLayout]}>
-              Recommend
-            </Text>
+        <Pressable
+          style={styles.cast}
+          onPress={() => navigation.navigate("CLICKEDMOVIECAST")}
+        >
+          <Text style={[styles.cast1, styles.cast1Typo]}>Cast</Text>
+        </Pressable>
+        <Pressable
+          style={styles.reviews1}
+          onPress={() => navigation.navigate("CLICKEDMOVIEREVIEWS")}
+        >
+          <Text style={[styles.reviews2, styles.cast1Typo]}>Reviews</Text>
+        </Pressable>
+        <Text style={[styles.inTheHeart, styles.inTheHeartPosition]}>
+          In the heart of New York, amidst the chaos of the holiday season, two
+          strangers with contrasting lives find their fates intertwined after a
+          rare solar eclipse visible over 34th Street. As they navigate unexpected
+          challenges and discover the magic of connection, they realize the city
+          has more to offer than its bustling streets and towering skyscrapers.
+          Eclipse Over 34th Street is a heartwarming tale of serendipity, love,
+          and the little moments that become life's biggest gifts.
+        </Text>
+        <View style={[styles.clickedmovieAboutItem, styles.borderBorder]} />
+        <View
+          style={[styles.barsHomeIndicator, styles.barsHomeIndicatorPosition]}
+        >
+          <View style={[styles.background, styles.capIconPosition]} />
+          <View style={styles.line} />
+        </View>
+        <View style={[styles.barsStatusBarIphoneL, styles.capIconPosition]}>
+          <View style={styles.battery}>
+            <View style={[styles.border, styles.borderBorder]} />
+            <Image
+              style={[styles.capIcon, styles.capIconPosition]}
+              contentFit="cover"
+              source={require("../assets/cap.png")}
+            />
+            <View style={styles.capacity} />
+          </View>
+          <Image
+            style={styles.wifiIcon}
+            contentFit="cover"
+            source={require("../assets/wifi.png")}
+          />
+          <Image
+            style={styles.cellularConnectionIcon}
+            contentFit="cover"
+            source={require("../assets/cellular-connection.png")}
+          />
+          <View style={styles.timeStyle}>
+            <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
           </View>
         </View>
-        <Image
-          style={[styles.vectorIcon, styles.iconLayout]}
-          contentFit="cover"
-          source={require("../assets/vector8.png")}
-        />
-        <Pressable
-          style={[styles.wrapper, styles.wrapperLayout]}
-          onPress={() => navigation.navigate("REVIEW")}
-        >
-          <Image
-            style={styles.iconLayout1}
-            contentFit="cover"
-            source={require("../assets/star-17.png")}
-          />
-        </Pressable>
       </View>
-      <Text style={[styles.review, styles.cast1Typo]}>Review</Text>
-      <View style={styles.ratingComponent}>
-        <Image
-          style={[styles.ratingComponentChild, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-121.png")}
-        />
-        <Image
-          style={[styles.ratingComponentItem, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-131.png")}
-        />
-        <Image
-          style={[styles.ratingComponentInner, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-141.png")}
-        />
-        <Image
-          style={[styles.starIcon, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-151.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild1, styles.capIconPosition]}
-          contentFit="cover"
-          source={require("../assets/star-161.png")}
-        />
-      </View>
-      <Text style={[styles.reviews, styles.matchLayout]}>800 reviews</Text>
-      <Text style={[styles.match, styles.timeTypo]}>90 % Match</Text>
-      <Text
-        style={[styles.dramaAction, styles.inTheHeartPosition]}
-      >{`Drama & Action`}</Text>
-      <Pressable
-        style={styles.vector}
-        onPress={() => navigation.navigate("HOME")}
-      >
-        <Image
-          style={[styles.icon2, styles.iconLayout]}
-          contentFit="cover"
-          source={require("../assets/vector9.png")}
-        />
-      </Pressable>
-      <Pressable
-        style={styles.cast}
-        onPress={() => navigation.navigate("CLICKEDMOVIECAST")}
-      >
-        <Text style={[styles.cast1, styles.cast1Typo]}>Cast</Text>
-      </Pressable>
-      <Pressable
-        style={styles.reviews1}
-        onPress={() => navigation.navigate("CLICKEDMOVIEREVIEWS")}
-      >
-        <Text style={[styles.reviews2, styles.cast1Typo]}>Reviews</Text>
-      </Pressable>
-      <Text style={[styles.inTheHeart, styles.inTheHeartPosition]}>
-        In the heart of New York, amidst the chaos of the holiday season, two
-        strangers with contrasting lives find their fates intertwined after a
-        rare solar eclipse visible over 34th Street. As they navigate unexpected
-        challenges and discover the magic of connection, they realize the city
-        has more to offer than its bustling streets and towering skyscrapers.
-        Eclipse Over 34th Street is a heartwarming tale of serendipity, love,
-        and the little moments that become life's biggest gifts.
-      </Text>
-      <View style={[styles.clickedmovieAboutItem, styles.borderBorder]} />
-      <View
-        style={[styles.barsHomeIndicator, styles.barsHomeIndicatorPosition]}
-      >
-        <View style={[styles.background, styles.capIconPosition]} />
-        <View style={styles.line} />
-      </View>
-      <View style={[styles.barsStatusBarIphoneL, styles.capIconPosition]}>
-        <View style={styles.battery}>
-          <View style={[styles.border, styles.borderBorder]} />
-          <Image
-            style={[styles.capIcon, styles.capIconPosition]}
-            contentFit="cover"
-            source={require("../assets/cap.png")}
-          />
-          <View style={styles.capacity} />
-        </View>
-        <Image
-          style={styles.wifiIcon}
-          contentFit="cover"
-          source={require("../assets/wifi.png")}
-        />
-        <Image
-          style={styles.cellularConnectionIcon}
-          contentFit="cover"
-          source={require("../assets/cellular-connection.png")}
-        />
-        <View style={styles.timeStyle}>
-          <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
-        </View>
-      </View>
-    </View>
     </ScrollView>
   );
 };
