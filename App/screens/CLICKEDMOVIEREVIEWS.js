@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
+import { StyleSheet, ScrollView, View, Text, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
@@ -9,728 +9,731 @@ const CLICKEDMOVIEREVIEWS = () => {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.clickedmovieReviews}>
-      <View
-        style={[
-          styles.clickedmovieReviewsChild,
-          styles.barsHomeIndicatorPosition,
-        ]}
-      />
-      <View style={[styles.rectangleParent, styles.rectangleLayout]}>
-        <View style={[styles.groupChild, styles.groupLayout1]} />
-        <Image
-          style={[styles.userCircleIcon, styles.userIconLayout]}
-          contentFit="cover"
-          source={require("../assets/usercircle1.png")}
-        />
-        <Text style={[styles.puneeth, styles.reviewsFlexBox]}>Puneeth</Text>
-        <Text style={[styles.trappedInTime, styles.trappedTypo]}>
-          Trapped in time, a pilot must navigate the shadows of history to alter
-          the future. 'Chrono Wings' is a thrilling journey where every second
-          counts.
-        </Text>
-        <Text style={styles.critic}>Critic</Text>
-        <Text style={[styles.text, styles.textTypo1]}>11/11/2023</Text>
-        <Image
-          style={[styles.chevronTopCircleIcon, styles.chevronIconLayout]}
-          contentFit="cover"
-          source={require("../assets/chevrontopcircle.png")}
-        />
-        <Image
-          style={[styles.chevronBottomCircleIcon, styles.chevronIconLayout]}
-          contentFit="cover"
-          source={require("../assets/chevronbottomcircle.png")}
-        />
-        <Text style={styles.s}>S</Text>
-        <View style={[styles.stars, styles.starsLayout]}>
-          <Image
-            style={styles.starIconLayout}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star1.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star3.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star2.png")}
-          />
-        </View>
-        <Text style={[styles.more, styles.moreTypo]}>...more</Text>
-      </View>
-      <View style={styles.rectangleGroup}>
-        <View style={[styles.groupItem, styles.groupChildShadowBox]} />
-        <Image
-          style={[styles.userCircleIcon1, styles.userIconLayout]}
-          contentFit="cover"
-          source={require("../assets/usercircle1.png")}
-        />
-        <Text style={[styles.yashas, styles.reviewsFlexBox]}>Yashas</Text>
-        <Text style={[styles.trappedInTime1, styles.trappedTypo]}>
-          Trapped in time, a pilot must navigate the shadows of history to alter
-          the future. 'Chrono Wings' is a thrilling journey where every second
-          counts.
-        </Text>
-        <Text style={[styles.text1, styles.textTypo1]}>11/11/2023</Text>
-        <Image
-          style={[styles.chevronTopCircleIcon1, styles.chevronIconPosition]}
-          contentFit="cover"
-          source={require("../assets/chevrontopcircle.png")}
-        />
-        <Image
-          style={[styles.chevronBottomCircleIcon1, styles.chevronIconPosition]}
-          contentFit="cover"
-          source={require("../assets/chevronbottomcircle.png")}
-        />
-        <View style={[styles.stars1, styles.starsLayout]}>
-          <Image
-            style={styles.starIconLayout}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star1.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star3.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star2.png")}
-          />
-        </View>
-        <Text style={[styles.more1, styles.moreTypo]}>...more</Text>
-      </View>
-      <Pressable
-        style={[styles.rectangleContainer, styles.rectangleLayout]}
-        onPress={() => navigation.navigate("CLICKEDREVIEWS")}
-      >
-        <View style={[styles.groupInner, styles.groupLayout1]} />
-        <Image
-          style={[styles.userCircleIcon, styles.userIconLayout]}
-          contentFit="cover"
-          source={require("../assets/usercircle1.png")}
-        />
-        <Text style={[styles.yashaswini, styles.reviewsFlexBox]}>
-          Yashaswini
-        </Text>
-        <Text style={[styles.trappedInTime, styles.trappedTypo]}>
-          Trapped in time, a pilot must navigate the shadows of history to alter
-          the future. 'Chrono Wings' is a thrilling journey where every second
-          counts.
-        </Text>
-        <Text style={styles.critic}>Critic</Text>
-        <Text style={[styles.text, styles.textTypo1]}>11/11/2023</Text>
-        <Image
-          style={[styles.chevronTopCircleIcon, styles.chevronIconLayout]}
-          contentFit="cover"
-          source={require("../assets/chevrontopcircle.png")}
-        />
-        <Image
-          style={[styles.chevronBottomCircleIcon, styles.chevronIconLayout]}
-          contentFit="cover"
-          source={require("../assets/chevronbottomcircle.png")}
-        />
-        <Text style={styles.s}>S</Text>
-        <View style={[styles.stars, styles.starsLayout]}>
-          <Image
-            style={styles.starIconLayout}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star1.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star3.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star2.png")}
-          />
-        </View>
-        <Text style={[styles.more, styles.moreTypo]}>...more</Text>
-      </Pressable>
-      <Pressable
-        style={[styles.vector, styles.vectorLayout]}
-        onPress={() => navigation.navigate("HOME")}
-      >
-        <Image
-          style={[styles.icon, styles.iconLayout]}
-          contentFit="cover"
-          source={require("../assets/vector10.png")}
-        />
-      </Pressable>
-      <View style={[styles.groupView, styles.rectangleParentLayout]}>
-        <View style={[styles.rectangleView, styles.groupChildShadowBox]} />
-        <Text style={[styles.flickpicks40, styles.flickpicks40Typo]}>
-          #FlickPicks 40
-        </Text>
-      </View>
-      <View style={[styles.rectangleParent1, styles.rectangleParentLayout]}>
-        <View style={[styles.groupChild1, styles.groupChildShadowBox]} />
-        <Text style={[styles.moviemagic30, styles.flickpicks40Typo]}>
-          #MovieMagic 30
-        </Text>
-      </View>
-      <View style={[styles.rectangleParent2, styles.rectangleParentLayout]}>
-        <View style={[styles.groupChild2, styles.groupChildShadowBox]} />
-        <Text style={[styles.boxofficebuzz36, styles.flickpicks40Typo]}>
-          #BoxOfficeBuzz 36
-        </Text>
-      </View>
-      <Pressable
-        style={[styles.arrowLeftLarge, styles.chevronIconLayout]}
-        onPress={() => navigation.navigate("DASHBOARD1")}
-      >
-        <Image
-          style={[styles.icon1, styles.iconLayout1]}
-          contentFit="cover"
-          source={require("../assets/arrowleftlarge.png")}
-        />
-      </Pressable>
-      <Text style={styles.kingdom}>Kingdom</Text>
-      <View style={[styles.clickedmovieReviewsInner, styles.frameGroupLayout]}>
-        <View style={styles.framePosition}>
-          <Image
-            style={[styles.frameChild, styles.framePosition]}
-            contentFit="cover"
-            source={require("../assets/frame-287.png")}
-          />
-          <LinearGradient
-            style={[styles.frameGroup, styles.frameGroupLayout]}
-            locations={[0, 1]}
-            colors={["rgba(0, 0, 0, 0.4)", "rgba(0, 0, 0, 0)"]}
-          >
-            <View style={[styles.parent, styles.parentFlexBox]}>
-              <Text style={[styles.text3, styles.m18Typo1]}>2019</Text>
-              <View style={styles.m18Wrapper}>
-                <Text style={[styles.m18, styles.m18Typo]}>M18</Text>
-              </View>
-              <Text style={[styles.season, styles.m18Typo1]}>1 Season</Text>
-            </View>
-            <View style={styles.frameContainer}>
-              <View style={styles.netflixParent}>
-                <Text style={[styles.netflix, styles.netflixTypo]}>
-                  NETFLIX
-                </Text>
-                <Text style={[styles.original, styles.netflixTypo]}>
-                  ORIGINAL
-                </Text>
-              </View>
-              <Image
-                style={styles.image35Icon}
-                contentFit="cover"
-                source={require("../assets/image-35.png")}
-              />
-            </View>
-            <View style={[styles.viralPlagueParent, styles.recommendFlexBox]}>
-              <Text style={styles.koreanTypo}>Viral Plague</Text>
-              <Image
-                style={styles.frameItem}
-                contentFit="cover"
-                source={require("../assets/ellipse-24.png")}
-              />
-              <Text style={[styles.korean, styles.koreanTypo]}>Korean</Text>
-              <Image
-                style={styles.frameItem}
-                contentFit="cover"
-                source={require("../assets/ellipse-24.png")}
-              />
-              <Text style={[styles.korean, styles.koreanTypo]}>
-                Period Piece
-              </Text>
-            </View>
-          </LinearGradient>
-        </View>
-      </View>
-      <View style={styles.groupParent}>
+    <ScrollView style={styles.clickedmovieReviews}>
+      <View style={styles.clickedmovieReviews}>
         <View
-          style={[styles.antDesignplusOutlinedParent, styles.myListLayout1]}
+          style={[
+            styles.clickedmovieReviewsChild,
+            styles.barsHomeIndicatorPosition,
+          ]}
+        />
+        <View style={[styles.rectangleParent, styles.rectangleLayout]}>
+          <View style={[styles.groupChild, styles.groupLayout1]} />
+          <Image
+            style={[styles.userCircleIcon, styles.userIconLayout]}
+            contentFit="cover"
+            source={require("../assets/usercircle1.png")}
+          />
+          <Text style={[styles.puneeth, styles.reviewsFlexBox]}>Puneeth</Text>
+          <Text style={[styles.trappedInTime, styles.trappedTypo]}>
+            Trapped in time, a pilot must navigate the shadows of history to alter
+            the future. 'Chrono Wings' is a thrilling journey where every second
+            counts.
+          </Text>
+          <Text style={styles.critic}>Critic</Text>
+          <Text style={[styles.text, styles.textTypo1]}>11/11/2023</Text>
+          <Image
+            style={[styles.chevronTopCircleIcon, styles.chevronIconLayout]}
+            contentFit="cover"
+            source={require("../assets/chevrontopcircle.png")}
+          />
+          <Image
+            style={[styles.chevronBottomCircleIcon, styles.chevronIconLayout]}
+            contentFit="cover"
+            source={require("../assets/chevronbottomcircle.png")}
+          />
+          <Text style={styles.s}>S</Text>
+          <View style={[styles.stars, styles.starsLayout]}>
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star1.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star3.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+          </View>
+          <Text style={[styles.more, styles.moreTypo]}>...more</Text>
+        </View>
+        <View style={styles.rectangleGroup}>
+          <View style={[styles.groupItem, styles.groupChildShadowBox]} />
+          <Image
+            style={[styles.userCircleIcon1, styles.userIconLayout]}
+            contentFit="cover"
+            source={require("../assets/usercircle1.png")}
+          />
+          <Text style={[styles.yashas, styles.reviewsFlexBox]}>Yashas</Text>
+          <Text style={[styles.trappedInTime1, styles.trappedTypo]}>
+            Trapped in time, a pilot must navigate the shadows of history to alter
+            the future. 'Chrono Wings' is a thrilling journey where every second
+            counts.
+          </Text>
+          <Text style={[styles.text1, styles.textTypo1]}>11/11/2023</Text>
+          <Image
+            style={[styles.chevronTopCircleIcon1, styles.chevronIconPosition]}
+            contentFit="cover"
+            source={require("../assets/chevrontopcircle.png")}
+          />
+          <Image
+            style={[styles.chevronBottomCircleIcon1, styles.chevronIconPosition]}
+            contentFit="cover"
+            source={require("../assets/chevronbottomcircle.png")}
+          />
+          <View style={[styles.stars1, styles.starsLayout]}>
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star1.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star3.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+          </View>
+          <Text style={[styles.more1, styles.moreTypo]}>...more</Text>
+        </View>
+        <Pressable
+          style={[styles.rectangleContainer, styles.rectangleLayout]}
+          onPress={() => navigation.navigate("CLICKEDREVIEWS")}
+        >
+          <View style={[styles.groupInner, styles.groupLayout1]} />
+          <Image
+            style={[styles.userCircleIcon, styles.userIconLayout]}
+            contentFit="cover"
+            source={require("../assets/usercircle1.png")}
+          />
+          <Text style={[styles.yashaswini, styles.reviewsFlexBox]}>
+            Yashaswini
+          </Text>
+          <Text style={[styles.trappedInTime, styles.trappedTypo]}>
+            Trapped in time, a pilot must navigate the shadows of history to alter
+            the future. 'Chrono Wings' is a thrilling journey where every second
+            counts.
+          </Text>
+          <Text style={styles.critic}>Critic</Text>
+          <Text style={[styles.text, styles.textTypo1]}>11/11/2023</Text>
+          <Image
+            style={[styles.chevronTopCircleIcon, styles.chevronIconLayout]}
+            contentFit="cover"
+            source={require("../assets/chevrontopcircle.png")}
+          />
+          <Image
+            style={[styles.chevronBottomCircleIcon, styles.chevronIconLayout]}
+            contentFit="cover"
+            source={require("../assets/chevronbottomcircle.png")}
+          />
+          <Text style={styles.s}>S</Text>
+          <View style={[styles.stars, styles.starsLayout]}>
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star1.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star3.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+          </View>
+          <Text style={[styles.more, styles.moreTypo]}>...more</Text>
+        </Pressable>
+        <Pressable
+          style={[styles.vector, styles.vectorLayout]}
+          onPress={() => navigation.navigate("HOME")}
         >
           <Image
-            style={styles.antDesignplusOutlinedIcon}
+            style={[styles.icon, styles.iconLayout]}
             contentFit="cover"
-            source={require("../assets/antdesignplusoutlined.png")}
+            source={require("../assets/vector10.png")}
           />
-          <Text style={[styles.myList, styles.myListLayout]}>My List</Text>
+        </Pressable>
+        <View style={[styles.groupView, styles.rectangleParentLayout]}>
+          <View style={[styles.rectangleView, styles.groupChildShadowBox]} />
+          <Text style={[styles.flickpicks40, styles.flickpicks40Typo]}>
+            #FlickPicks 40
+          </Text>
         </View>
-        <View style={[styles.groupWrapper, styles.recommendWrapperLayout]}>
-          <View
-            style={[styles.recommendWrapper, styles.recommendWrapperLayout]}
-          >
-            <Text style={[styles.recommend, styles.recommendWrapperLayout]}>
-              Recommend
-            </Text>
-          </View>
+        <View style={[styles.rectangleParent1, styles.rectangleParentLayout]}>
+          <View style={[styles.groupChild1, styles.groupChildShadowBox]} />
+          <Text style={[styles.moviemagic30, styles.flickpicks40Typo]}>
+            #MovieMagic 30
+          </Text>
         </View>
-        <Image
-          style={[styles.groupChild3, styles.myListLayout1]}
-          contentFit="cover"
-          source={require("../assets/star-17.png")}
-        />
-      </View>
-      <Text style={[styles.review, styles.myListLayout]}>Review</Text>
-      <View style={styles.ratingComponent}>
-        <Image
-          style={[styles.ratingComponentChild, styles.ratingChildLayout1]}
-          contentFit="cover"
-          source={require("../assets/star-121.png")}
-        />
-        <Image
-          style={[styles.ratingComponentItem, styles.ratingChildLayout1]}
-          contentFit="cover"
-          source={require("../assets/star-131.png")}
-        />
-        <Image
-          style={[styles.ratingComponentInner, styles.ratingChildLayout1]}
-          contentFit="cover"
-          source={require("../assets/star-141.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild1, styles.ratingChildLayout1]}
-          contentFit="cover"
-          source={require("../assets/star-151.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild2, styles.ratingChildLayout1]}
-          contentFit="cover"
-          source={require("../assets/star-161.png")}
-        />
-      </View>
-      <Pressable
-        style={[styles.ratingComponent1, styles.ratingLayout]}
-        onPress={() => navigation.navigate("VIEWERRATING")}
-      >
-        <Image
-          style={[styles.ratingComponentChild3, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-122.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild4, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-132.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild5, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-142.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild6, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-152.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild7, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-162.png")}
-        />
-      </Pressable>
-      <View style={[styles.ratingComponent2, styles.ratingLayout]}>
-        <Image
-          style={[styles.ratingComponentChild3, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-122.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild4, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-132.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild5, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-142.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild6, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-152.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild7, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-162.png")}
-        />
-      </View>
-      <Pressable
-        style={[styles.ratingComponent3, styles.ratingLayout]}
-        onPress={() => navigation.navigate("CRITICRATING")}
-      >
-        <Image
-          style={[styles.ratingComponentChild3, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-122.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild4, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-132.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild5, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-142.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild6, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-152.png")}
-        />
-        <Image
-          style={[styles.ratingComponentChild7, styles.ratingChildLayout]}
-          contentFit="cover"
-          source={require("../assets/star-162.png")}
-        />
-      </Pressable>
-      <Text style={[styles.reviews, styles.matchLayout]}>800 reviews</Text>
-      <Text style={[styles.match, styles.timeTypo]}>90 % Match</Text>
-      <Image
-        style={[styles.vectorIcon, styles.iconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector11.png")}
-      />
-      <Text style={[styles.popularReviews, styles.reviewsFlexBox]}>
-        Popular Reviews
-      </Text>
-      <Text style={[styles.overallRating, styles.reviewsFlexBox]}>
-        Overall Rating
-      </Text>
-      <Pressable
-        style={[styles.chartContainer, styles.parentFlexBox]}
-        onPress={() => navigation.navigate("OVERALLRATING")}
-      >
-        <View style={[styles.totalContainer, styles.recommendFlexBox]}>
-          <View style={styles.trendIndicator}>
+        <View style={[styles.rectangleParent2, styles.rectangleParentLayout]}>
+          <View style={[styles.groupChild2, styles.groupChildShadowBox]} />
+          <Text style={[styles.boxofficebuzz36, styles.flickpicks40Typo]}>
+            #BoxOfficeBuzz 36
+          </Text>
+        </View>
+        <Pressable
+          style={[styles.arrowLeftLarge, styles.chevronIconLayout]}
+          onPress={() => navigation.navigate("DASHBOARD1")}
+        >
+          <Image
+            style={[styles.icon1, styles.iconLayout1]}
+            contentFit="cover"
+            source={require("../assets/arrowleftlarge.png")}
+          />
+        </Pressable>
+        <Text style={styles.kingdom}>Kingdom</Text>
+        <View style={[styles.clickedmovieReviewsInner, styles.frameGroupLayout]}>
+          <View style={styles.framePosition}>
             <Image
-              style={styles.icon2}
+              style={[styles.frameChild, styles.framePosition]}
               contentFit="cover"
-              source={require("../assets/icon.png")}
+              source={require("../assets/frame-287.png")}
             />
-            <Text style={styles.reviews1}>10%</Text>
+            <LinearGradient
+              style={[styles.frameGroup, styles.frameGroupLayout]}
+              locations={[0, 1]}
+              colors={["rgba(0, 0, 0, 0.4)", "rgba(0, 0, 0, 0)"]}
+            >
+              <View style={[styles.parent, styles.parentFlexBox]}>
+                <Text style={[styles.text3, styles.m18Typo1]}>2019</Text>
+                <View style={styles.m18Wrapper}>
+                  <Text style={[styles.m18, styles.m18Typo]}>M18</Text>
+                </View>
+                <Text style={[styles.season, styles.m18Typo1]}>1 Season</Text>
+              </View>
+              <View style={styles.frameContainer}>
+                <View style={styles.netflixParent}>
+                  <Text style={[styles.netflix, styles.netflixTypo]}>
+                    NETFLIX
+                  </Text>
+                  <Text style={[styles.original, styles.netflixTypo]}>
+                    ORIGINAL
+                  </Text>
+                </View>
+                <Image
+                  style={styles.image35Icon}
+                  contentFit="cover"
+                  source={require("../assets/image-35.png")}
+                />
+              </View>
+              <View style={[styles.viralPlagueParent, styles.recommendFlexBox]}>
+                <Text style={styles.koreanTypo}>Viral Plague</Text>
+                <Image
+                  style={styles.frameItem}
+                  contentFit="cover"
+                  source={require("../assets/ellipse-24.png")}
+                />
+                <Text style={[styles.korean, styles.koreanTypo]}>Korean</Text>
+                <Image
+                  style={styles.frameItem}
+                  contentFit="cover"
+                  source={require("../assets/ellipse-24.png")}
+                />
+                <Text style={[styles.korean, styles.koreanTypo]}>
+                  Period Piece
+                </Text>
+              </View>
+            </LinearGradient>
           </View>
-          <Text style={[styles.reviews2, styles.reviews2Layout]}>{`80%
-800 Reviews`}</Text>
         </View>
-        <Image
-          style={[styles.containerIcon, styles.containerIconSpaceBlock]}
-          contentFit="cover"
-          source={require("../assets/container.png")}
-        />
-        <View style={styles.containerIconSpaceBlock}>
-          <View style={[styles.fixedRatio, styles.recommendFlexBox]}>
-            <View style={styles.spineTransform} />
+        <View style={styles.groupParent}>
+          <View
+            style={[styles.antDesignplusOutlinedParent, styles.myListLayout1]}
+          >
+            <Image
+              style={styles.antDesignplusOutlinedIcon}
+              contentFit="cover"
+              source={require("../assets/antdesignplusoutlined.png")}
+            />
+            <Text style={[styles.myList, styles.myListLayout]}>My List</Text>
           </View>
-          <View style={[styles.fixedRatio, styles.recommendFlexBox]}>
-            <View style={styles.spineTransform} />
+          <View style={[styles.groupWrapper, styles.recommendWrapperLayout]}>
+            <View
+              style={[styles.recommendWrapper, styles.recommendWrapperLayout]}
+            >
+              <Text style={[styles.recommend, styles.recommendWrapperLayout]}>
+                Recommend
+              </Text>
+            </View>
           </View>
+          <Image
+            style={[styles.groupChild3, styles.myListLayout1]}
+            contentFit="cover"
+            source={require("../assets/star-17.png")}
+          />
         </View>
-      </Pressable>
-      <Pressable
-        style={[styles.viewers, styles.viewersPosition]}
-        onPress={() => navigation.navigate("VIEWERRATING")}
-      >
-        <Text style={[styles.viewers1, styles.viewers1Layout]}>Viewers</Text>
-      </Pressable>
-      <Pressable
-        style={[styles.critics, styles.viewersPosition]}
-        onPress={() => navigation.navigate("CRITICRATING")}
-      >
-        <Text style={[styles.critics1, styles.reviews2Layout]}>Critics</Text>
-      </Pressable>
-      <Text style={[styles.text4, styles.textTypo]}>70%</Text>
-      <Text style={[styles.text5, styles.textTypo]}>90%</Text>
-      <View style={styles.starsParent}>
-        <View style={[styles.stars3, styles.starsLayout]}>
+        <Text style={[styles.review, styles.myListLayout]}>Review</Text>
+        <View style={styles.ratingComponent}>
           <Image
-            style={styles.starIconLayout}
+            style={[styles.ratingComponentChild, styles.ratingChildLayout1]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-121.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentItem, styles.ratingChildLayout1]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-131.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentInner, styles.ratingChildLayout1]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-141.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild1, styles.ratingChildLayout1]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-151.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild2, styles.ratingChildLayout1]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-161.png")}
           />
         </View>
         <Pressable
-          style={[styles.stars4, styles.starsLayout]}
-          onPress={() => navigation.navigate("EACHRATINGREVIEWS")}
+          style={[styles.ratingComponent1, styles.ratingLayout]}
+          onPress={() => navigation.navigate("VIEWERRATING")}
         >
           <Image
-            style={styles.starIconLayout}
+            style={[styles.ratingComponentChild3, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-122.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild4, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-132.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild5, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-142.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild6, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-152.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild7, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-162.png")}
           />
         </Pressable>
-        <View style={[styles.stars5, styles.starsLayout]}>
+        <View style={[styles.ratingComponent2, styles.ratingLayout]}>
           <Image
-            style={styles.starIconLayout}
+            style={[styles.ratingComponentChild3, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-122.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild4, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-132.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild5, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-142.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild6, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-152.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild7, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
-          />
-        </View>
-        <View style={[styles.stars6, styles.starsLayout]}>
-          <Image
-            style={styles.starIconLayout}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star2.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star2.png")}
-          />
-          <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
-            contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-162.png")}
           />
         </View>
-        <View style={[styles.stars7, styles.starsLayout]}>
+        <Pressable
+          style={[styles.ratingComponent3, styles.ratingLayout]}
+          onPress={() => navigation.navigate("CRITICRATING")}
+        >
           <Image
-            style={styles.starIconLayout}
+            style={[styles.ratingComponentChild3, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star.png")}
+            source={require("../assets/star-122.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild4, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-132.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild5, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-142.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild6, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-152.png")}
           />
           <Image
-            style={[styles.starIcon1, styles.starIconLayout]}
+            style={[styles.ratingComponentChild7, styles.ratingChildLayout]}
             contentFit="cover"
-            source={require("../assets/star2.png")}
+            source={require("../assets/star-162.png")}
           />
-        </View>
-      </View>
-      <Image
-        style={[styles.clickedmovieReviewsItem, styles.groupIconLayout]}
-        contentFit="cover"
-        source={require("../assets/group-109.png")}
-      />
-      <Image
-        style={[styles.groupIcon, styles.groupIconLayout]}
-        contentFit="cover"
-        source={require("../assets/group-109.png")}
-      />
-      <View style={[styles.group, styles.groupLayout]}>
-        <Text style={[styles.text6, styles.textLayout]}>40</Text>
-        <Text style={[styles.text7, styles.textLayout]}>30</Text>
-        <Text style={[styles.text8, styles.textLayout]}>25</Text>
-        <Text style={[styles.text9, styles.textLayout]}>0</Text>
-        <Text style={[styles.text10, styles.textLayout]}>0</Text>
-      </View>
-      <View style={[styles.container, styles.groupLayout]}>
-        <Text style={[styles.text6, styles.textLayout]}>100</Text>
-        <Text style={[styles.text7, styles.textLayout]}>60</Text>
-        <Text style={[styles.text8, styles.textLayout]}>40</Text>
-        <Text style={[styles.text9, styles.textLayout]}>5</Text>
-        <Text style={[styles.text10, styles.textLayout]}>3</Text>
-      </View>
-      <Text style={[styles.similarlyRatedMovie, styles.reviewsFlexBox]}>
-        Similarly rated movie
-      </Text>
-      <View style={[styles.clickedmovieReviewsInner1, styles.groupChildLayout]}>
-        <View style={[styles.groupContainer, styles.groupChildLayout]}>
-          <View style={[styles.rectangleParent3, styles.groupChildLayout]}>
+        </Pressable>
+        <Text style={[styles.reviews, styles.matchLayout]}>800 reviews</Text>
+        <Text style={[styles.match, styles.timeTypo]}>90 % Match</Text>
+        <Image
+          style={[styles.vectorIcon, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector11.png")}
+        />
+        <Text style={[styles.popularReviews, styles.reviewsFlexBox]}>
+          Popular Reviews
+        </Text>
+        <Text style={[styles.overallRating, styles.reviewsFlexBox]}>
+          Overall Rating
+        </Text>
+        <Pressable
+          style={[styles.chartContainer, styles.parentFlexBox]}
+          onPress={() => navigation.navigate("OVERALLRATING")}
+        >
+          <View style={[styles.totalContainer, styles.recommendFlexBox]}>
+            <View style={styles.trendIndicator}>
+              <Image
+                style={styles.icon2}
+                contentFit="cover"
+                source={require("../assets/icon.png")}
+              />
+              <Text style={styles.reviews1}>10%</Text>
+            </View>
+            <Text style={[styles.reviews2, styles.reviews2Layout]}>{`80%
+800 Reviews`}</Text>
+          </View>
+          <Image
+            style={[styles.containerIcon, styles.containerIconSpaceBlock]}
+            contentFit="cover"
+            source={require("../assets/container.png")}
+          />
+          <View style={styles.containerIconSpaceBlock}>
+            <View style={[styles.fixedRatio, styles.recommendFlexBox]}>
+              <View style={styles.spineTransform} />
+            </View>
+            <View style={[styles.fixedRatio, styles.recommendFlexBox]}>
+              <View style={styles.spineTransform} />
+            </View>
+          </View>
+        </Pressable>
+        <Pressable
+          style={[styles.viewers, styles.viewersPosition]}
+          onPress={() => navigation.navigate("VIEWERRATING")}
+        >
+          <Text style={[styles.viewers1, styles.viewers1Layout]}>Viewers</Text>
+        </Pressable>
+        <Pressable
+          style={[styles.critics, styles.viewersPosition]}
+          onPress={() => navigation.navigate("CRITICRATING")}
+        >
+          <Text style={[styles.critics1, styles.reviews2Layout]}>Critics</Text>
+        </Pressable>
+        <Text style={[styles.text4, styles.textTypo]}>70%</Text>
+        <Text style={[styles.text5, styles.textTypo]}>90%</Text>
+        <View style={styles.starsParent}>
+          <View style={[styles.stars3, styles.starsLayout]}>
             <Image
-              style={[styles.rectangleIcon, styles.groupChildLayout]}
+              style={styles.starIconLayout}
               contentFit="cover"
-              source={require("../assets/rectangle-141.png")}
+              source={require("../assets/star.png")}
             />
             <Image
-              style={[styles.groupChild4, styles.groupChildLayout]}
+              style={[styles.starIcon1, styles.starIconLayout]}
               contentFit="cover"
-              source={require("../assets/rectangle-161.png")}
+              source={require("../assets/star.png")}
             />
             <Image
-              style={[styles.groupChild5, styles.groupChildLayout]}
+              style={[styles.starIcon1, styles.starIconLayout]}
               contentFit="cover"
-              source={require("../assets/rectangle-151.png")}
+              source={require("../assets/star.png")}
             />
             <Image
-              style={[styles.groupChild6, styles.groupChildLayout]}
+              style={[styles.starIcon1, styles.starIconLayout]}
               contentFit="cover"
-              source={require("../assets/rectangle-171.png")}
+              source={require("../assets/star.png")}
             />
             <Image
-              style={[styles.groupChild7, styles.groupChildLayout]}
+              style={[styles.starIcon1, styles.starIconLayout]}
               contentFit="cover"
-              source={require("../assets/rectangle-181.png")}
+              source={require("../assets/star.png")}
+            />
+          </View>
+          <Pressable
+            style={[styles.stars4, styles.starsLayout]}
+            onPress={() => navigation.navigate("EACHRATINGREVIEWS")}
+          >
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+          </Pressable>
+          <View style={[styles.stars5, styles.starsLayout]}>
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+          </View>
+          <View style={[styles.stars6, styles.starsLayout]}>
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+          </View>
+          <View style={[styles.stars7, styles.starsLayout]}>
+            <Image
+              style={styles.starIconLayout}
+              contentFit="cover"
+              source={require("../assets/star.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
+            />
+            <Image
+              style={[styles.starIcon1, styles.starIconLayout]}
+              contentFit="cover"
+              source={require("../assets/star2.png")}
             />
           </View>
         </View>
-      </View>
-      <Pressable
-        style={[styles.about, styles.castPosition]}
-        onPress={() => navigation.navigate("CLICKEDMOVIEABOUT")}
-      >
-        <Text style={[styles.text16, styles.reviewsFlexBox]}>
-          <Text style={[styles.about1, styles.reviewTypo]}>About</Text>
-          <Text style={[styles.text17, styles.yashasTypo]}>{`    `}</Text>
+        <Image
+          style={[styles.clickedmovieReviewsItem, styles.groupIconLayout]}
+          contentFit="cover"
+          source={require("../assets/group-109.png")}
+        />
+        <Image
+          style={[styles.groupIcon, styles.groupIconLayout]}
+          contentFit="cover"
+          source={require("../assets/group-109.png")}
+        />
+        <View style={[styles.group, styles.groupLayout]}>
+          <Text style={[styles.text6, styles.textLayout]}>40</Text>
+          <Text style={[styles.text7, styles.textLayout]}>30</Text>
+          <Text style={[styles.text8, styles.textLayout]}>25</Text>
+          <Text style={[styles.text9, styles.textLayout]}>0</Text>
+          <Text style={[styles.text10, styles.textLayout]}>0</Text>
+        </View>
+        <View style={[styles.container, styles.groupLayout]}>
+          <Text style={[styles.text6, styles.textLayout]}>100</Text>
+          <Text style={[styles.text7, styles.textLayout]}>60</Text>
+          <Text style={[styles.text8, styles.textLayout]}>40</Text>
+          <Text style={[styles.text9, styles.textLayout]}>5</Text>
+          <Text style={[styles.text10, styles.textLayout]}>3</Text>
+        </View>
+        <Text style={[styles.similarlyRatedMovie, styles.reviewsFlexBox]}>
+          Similarly rated movie
         </Text>
-      </Pressable>
-      <Pressable
-        style={[styles.cast, styles.castPosition]}
-        onPress={() => navigation.navigate("CLICKEDMOVIECAST")}
-      >
-        <Text style={[styles.cast1, styles.textLayout]}>Cast</Text>
-      </Pressable>
-      <Text style={[styles.reviews3, styles.viewers1Layout]}>Reviews</Text>
-      <Pressable
-        style={[styles.vector1, styles.vectorLayout]}
-        onPress={() => navigation.navigate("HOME")}
-      >
-        <Image
-          style={[styles.icon, styles.iconLayout]}
-          contentFit="cover"
-          source={require("../assets/vector12.png")}
-        />
-      </Pressable>
-      <View style={styles.lineView} />
-      <View
-        style={[styles.barsHomeIndicator, styles.barsHomeIndicatorPosition]}
-      >
-        <View style={[styles.background, styles.iconLayout1]} />
-        <View style={styles.line} />
-      </View>
-      <View style={styles.barsStatusBarIphoneL}>
-        <View style={styles.battery}>
-          <View style={styles.border} />
+        <View style={[styles.clickedmovieReviewsInner1, styles.groupChildLayout]}>
+          <View style={[styles.groupContainer, styles.groupChildLayout]}>
+            <View style={[styles.rectangleParent3, styles.groupChildLayout]}>
+              <Image
+                style={[styles.rectangleIcon, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-141.png")}
+              />
+              <Image
+                style={[styles.groupChild4, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-161.png")}
+              />
+              <Image
+                style={[styles.groupChild5, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-151.png")}
+              />
+              <Image
+                style={[styles.groupChild6, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-171.png")}
+              />
+              <Image
+                style={[styles.groupChild7, styles.groupChildLayout]}
+                contentFit="cover"
+                source={require("../assets/rectangle-181.png")}
+              />
+            </View>
+          </View>
+        </View>
+        <Pressable
+          style={[styles.about, styles.castPosition]}
+          onPress={() => navigation.navigate("CLICKEDMOVIEABOUT")}
+        >
+          <Text style={[styles.text16, styles.reviewsFlexBox]}>
+            <Text style={[styles.about1, styles.reviewTypo]}>About</Text>
+            <Text style={[styles.text17, styles.yashasTypo]}>{`    `}</Text>
+          </Text>
+        </Pressable>
+        <Pressable
+          style={[styles.cast, styles.castPosition]}
+          onPress={() => navigation.navigate("CLICKEDMOVIECAST")}
+        >
+          <Text style={[styles.cast1, styles.textLayout]}>Cast</Text>
+        </Pressable>
+        <Text style={[styles.reviews3, styles.viewers1Layout]}>Reviews</Text>
+        <Pressable
+          style={[styles.vector1, styles.vectorLayout]}
+          onPress={() => navigation.navigate("HOME")}
+        >
           <Image
-            style={[styles.capIcon, styles.iconLayout]}
+            style={[styles.icon, styles.iconLayout]}
             contentFit="cover"
-            source={require("../assets/cap.png")}
+            source={require("../assets/vector12.png")}
           />
-          <View style={styles.capacity} />
+        </Pressable>
+        <View style={styles.lineView} />
+        <View
+          style={[styles.barsHomeIndicator, styles.barsHomeIndicatorPosition]}
+        >
+          <View style={[styles.background, styles.iconLayout1]} />
+          <View style={styles.line} />
         </View>
-        <Image
-          style={styles.wifiIcon}
-          contentFit="cover"
-          source={require("../assets/wifi.png")}
-        />
-        <Image
-          style={styles.cellularConnectionIcon}
-          contentFit="cover"
-          source={require("../assets/cellular-connection.png")}
-        />
-        <View style={styles.timeStyle}>
-          <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
+        <View style={styles.barsStatusBarIphoneL}>
+          <View style={styles.battery}>
+            <View style={styles.border} />
+            <Image
+              style={[styles.capIcon, styles.iconLayout]}
+              contentFit="cover"
+              source={require("../assets/cap.png")}
+            />
+            <View style={styles.capacity} />
+          </View>
+          <Image
+            style={styles.wifiIcon}
+            contentFit="cover"
+            source={require("../assets/wifi.png")}
+          />
+          <Image
+            style={styles.cellularConnectionIcon}
+            contentFit="cover"
+            source={require("../assets/cellular-connection.png")}
+          />
+          <View style={styles.timeStyle}>
+            <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
+          </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
+
   );
 };
 
@@ -1942,7 +1945,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   clickedmovieReviews: {
-    height: 810,
+    height: 1700,
     width: "100%",
     flex: 1,
     backgroundColor: Color.lightThemeSystemSurface,
