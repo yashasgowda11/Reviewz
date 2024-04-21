@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text,ScrollView, FlatList, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text,ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
  import { moviesData } from '../data';
 import { MoviesList } from '../components/MoviesList';
 import { useNavigation } from '@react-navigation/native';
 import MovieCard from '../components/MovieCard';
-import { NavigationContainer } from '@react-navigation/native';
-import FORYOU from './FORYOU';
-import SEARCH from './SEARCH';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import MySlider from '../components/ImageSliderCard';

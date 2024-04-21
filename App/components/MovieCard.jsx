@@ -1,13 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, View, Image, StyleSheet } from 'react-native';
-const imagePaths = {
-    'rectangle-141.png': require('../assets/rectangle-141.png'),
-    'rectangle-142.png': require('../assets/rectangle-142.png'),
-    'rectangle-143.png': require('../assets/rectangle-143.png'),
-    'rectangle-144.png': require('../assets/rectangle-144.png'),
-    'rectangle-145.png': require('../assets/rectangle-145.png'),
-    'rectangle-146.png': require('../assets/rectangle-146.png'),
-  };
+import { imagePaths } from '../data';
 const MovieCard = ({ movie, onPress, circular }) => {
   const imageURI = imagePaths[movie.item.imageUrl];
   const cardStyle = circular ? styles.circularCard : styles.card;

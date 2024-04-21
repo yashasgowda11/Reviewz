@@ -1,8 +1,6 @@
 import * as React from "react";
 import { StyleSheet, View, Text, Pressable,TouchableOpacity } from "react-native";
-import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
-import { FontFamily, FontSize, Color } from "../GlobalStyles";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const DASHBOARD1 = () => {
