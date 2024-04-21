@@ -16,8 +16,7 @@ const DASHBOARD1 = () => {
     <TouchableOpacity onPress={handleBackPress} style={styles.headerItem}>
           <Icon name="arrow-left" size={30} color="white" />
       </TouchableOpacity>
-        <Text style={styles.headerText}>Dashboard</Text>
-      
+      <Text style={[styles.headerText, styles.centerText]}>Dashboard</Text>
       </View>
       <View style={styles.container}>
       <View style={styles.content}>
@@ -59,108 +58,32 @@ const DASHBOARD1 = () => {
         </Pressable>
       </View>
     </View>
-        </>
-    // <View style={styles.dashboard1}>
-    //   <View style={styles.barsHomeIndicator}>
-    //     <View style={[styles.background, styles.borderPosition]} />
-    //     <View style={styles.line} />
-    //   </View>
-    //   <View style={[styles.barsStatusBarIphoneL, styles.myProfilePosition]}>
-    //     <View style={styles.battery}>
-    //       <View style={[styles.border, styles.borderBorder]} />
-    //       <Image
-    //         style={[styles.capIcon, styles.capIconPosition]}
-    //         contentFit="cover"
-    //         source={require("../assets/cap.png")}
-    //       />
-    //       <View style={styles.capacity} />
-    //     </View>
-    //     <Image
-    //       style={styles.wifiIcon}
-    //       contentFit="cover"
-    //       source={require("../assets/wifi.png")}
-    //     />
-    //     <Image
-    //       style={styles.cellularConnectionIcon}
-    //       contentFit="cover"
-    //       source={require("../assets/cellular-connection.png")}
-    //     />
-    //     <View style={styles.timeStyle}>
-    //       <Text style={styles.time}>9:41</Text>
-    //     </View>
-    //     <View style={styles.barsStatusBarIphoneLChild} />
-    //   </View>
-    //   <Image
-    //     style={styles.tvIcon}
-    //     contentFit="cover"
-    //     source={require("../assets/tv1.png")}
-    //   />
-    //   <View style={[styles.dashboard1Child, styles.borderBorder]} />
-    //   <Text
-    //     style={[styles.helpPoicies, styles.signOut1Typo]}
-    //   >{`Help & Poicies`}</Text>
-    //   <Pressable
-    //     style={styles.signOut}
-    //     onPress={() => navigation.navigate("Onboarding1")}
-    //   >
-    //     <Text style={styles.signOut1Typo}>Sign Out</Text>
-    //   </Pressable>
-    //   <Pressable
-    //     style={[styles.arrowLeftLarge, styles.accountPosition]}
-    //     onPress={() => navigation.navigate("HOME")}
-    //   >
-    //     <Image
-    //       style={styles.icon}
-    //       contentFit="cover"
-    //       source={require("../assets/arrowleftlarge.png")}
-    //     />
-    //   </Pressable>
-    //   <View style={styles.myProfileParent}>
-    //     <Pressable
-    //       style={[styles.myProfile, styles.myProfilePosition]}
-    //       onPress={() => navigation.navigate("MYPROFILE")}
-    //     >
-    //       <Text style={[styles.myProfile1, styles.accountTypo]}>
-    //         My Profile
-    //       </Text>
-    //     </Pressable>
-    //     <Text style={[styles.account, styles.accountTypo]}>Account</Text>
-    //     <Pressable
-    //       style={styles.myReviews}
-    //       onPress={() => navigation.navigate("MYREVIEWS")}
-    //     >
-    //       <Text style={[styles.myReviews1, styles.accountTypo]}>
-    //         My Reviews
-    //       </Text>
-    //     </Pressable>
-    //     <Pressable
-    //       style={styles.myList}
-    //       onPress={() => navigation.navigate("MYLIST")}
-    //     >
-    //       <Text style={[styles.myList1, styles.accountTypo]}>My List</Text>
-    //     </Pressable>
-    //   </View>
-    //   <Text style={styles.dashboard}>Dashboard</Text>
-    // </View>
+        </>   
   );
 };
 
 const styles = StyleSheet.create({
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
+    flexDirection: 'row', 
+    justifyContent: 'center', 
+    alignItems: 'center', 
     backgroundColor: 'black',
+    borderBottomWidth: 1,
+    borderBottomColor: 'gray',
     paddingVertical: 10,
-    paddingTop: 60
+    paddingTop:60
   },
   headerItem: {
-    paddingHorizontal: 10,
+    marginRight: 10, 
   },
   headerText: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: 'bold',
+  },
+  centerText: {
+    flexGrow: 1, 
+    textAlign: 'center', 
   },
   container: {
     flex: 1,
@@ -169,7 +92,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   content: {
-    width: '80%', // Adjust as needed
+    width: '80%', 
     alignItems: 'center',
   },
   item: {
