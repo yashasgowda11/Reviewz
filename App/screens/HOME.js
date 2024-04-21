@@ -7,6 +7,7 @@ import MovieCard from '../components/MovieCard';
 import { NavigationContainer } from '@react-navigation/native';
 import FORYOU from './FORYOU';
 import SEARCH from './SEARCH';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import MySlider from '../components/ImageSliderCard';
 
@@ -41,6 +42,14 @@ const Home = () => {
     navigation.navigate('FORYOU');
   };
 
+  const handleSearchPress = () => {
+    navigation.navigate('SEARCH');
+  };
+
+  const handleDrawerPress = () => {
+    navigation.navigate('DASHBOARD1');
+  };
+
 const circularExtradata={circular:true}
 const normalExtradata={circular:false}
   return (
@@ -50,11 +59,17 @@ const normalExtradata={circular:false}
      
       
     <View style={styles.header}>
+    <TouchableOpacity onPress={handleDrawerPress} style={styles.headerItem}>
+          <Icon name="list" size={30} color="white" />
+      </TouchableOpacity>
     <TouchableOpacity onPress={handleHomePress} style={styles.headerItem}>
         <Text style={styles.headerText}>Home</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={handleForYouPress} style={styles.headerItem}>
         <Text style={styles.headerText}>For You</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleSearchPress} style={styles.headerItem}>
+          <Icon name="search" size={30} color="white" />
       </TouchableOpacity>
       </View>
       <View><MySlider /></View>
