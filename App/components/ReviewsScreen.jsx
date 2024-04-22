@@ -15,8 +15,14 @@ const ReviewsScreen = ({ movie }) => {
   const handleProfilePress=(name)=>{
     navigation.navigate('MYPROFILE',{name});
   }
+  const handleReviewPress = (review) => {
+    navigation.navigate('CLICKEDREVIEWS', { review,"title":movie.item.title,"image":movie.item.imageUrl });
+  };
   const renderReviewCard = ({ item }) => {
+    console.log("item",item)
     return (
+        <>
+        <TouchableOpacity onPress={()=>handleReviewPress(item)}>
       <View style={styles.reviewCard}>
        <View style={styles.reviewHeader}>
        <TouchableOpacity onPress={()=>handleProfilePress(item.name)} style={styles.headerItem}>
@@ -24,10 +30,10 @@ const ReviewsScreen = ({ movie }) => {
         </TouchableOpacity>
         <Text style={styles.reviewHeaderText}>{item.name}</Text>
        
-        <Image
+        {item.spoilerTag && <Image
           source={require("../assets/S.jpeg")}
-          style={{ height: 20, width: 20, marginLeft: 10, marginRight: 10 }} // Adjust margins as needed
-        />
+          style={{ height: 20, width: 20, marginLeft: 10, marginRight: 10 }} 
+        />}
         <Text style={styles.reviewHeaderText}>{item.type}</Text>
       </View>
 
@@ -49,6 +55,8 @@ const ReviewsScreen = ({ movie }) => {
           </View>
         </View>
       </View>
+      </TouchableOpacity>
+      </>
     );
   };
   
