@@ -33,7 +33,6 @@ const Stack = createStackNavigator();
 
 const MyScreen = ({movie}) => {
   const [selectedTab, setSelectedTab] = useState('About');
-  console.log(selectedTab,movie)
   return (
     <View style={styles.container}>
 

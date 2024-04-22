@@ -9,6 +9,7 @@ import React from 'react';
 import { View,Image, Text, StyleSheet, FlatList,TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
+import StarRating from './StarRating';
 const ReviewsScreen = ({ movie }) => {
     const navigation = useNavigation();
   const reviews = movie.item.reviews || []; 
@@ -19,7 +20,6 @@ const ReviewsScreen = ({ movie }) => {
     navigation.navigate('CLICKEDREVIEWS', { review,"title":movie.item.title,"image":movie.item.imageUrl });
   };
   const renderReviewCard = ({ item }) => {
-    console.log("item",item)
     return (
         <>
         <TouchableOpacity onPress={()=>handleReviewPress(item)}>
@@ -56,12 +56,32 @@ const ReviewsScreen = ({ movie }) => {
         </View>
       </View>
       </TouchableOpacity>
+      
       </>
     );
   };
   
   
+  dict={1:[0,0],2:[0,0],3:[0,0],4:[0,0],5:[0,0]}
+  movie.item.reviews?.map(item=>{
+    if (item.type=="critic"){
+      dict[item.rating][0]=dict[item.rating][0]+1
+    }
+    else{
+      dict[item.rating][1]=dict[item.rating][1]+1
+    }
+  })
+  const tagsDict = {};
+movie.item.reviews.forEach(review => {
+  review.tags?.forEach(tag => {
+    tagsDict[tag] = (tagsDict[tag] || 0) + 1;
+  });
+});
 
+  console.log(tagsDict)
+  const handleReviewPressByStars=()=>{
+    navigation.navigate("CRITICRATINGS")
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.screenTitle}>ReviewsScreen</Text>
@@ -71,11 +91,55 @@ const ReviewsScreen = ({ movie }) => {
         keyExtractor={(item, index) => index.toString()} 
         showsVerticalScrollIndicator={false} 
       />
+      <Text style={{color:"white",textAlign:"left",paddingBottom:40,fontSize:35}}>Overall Rating</Text>
+       {Object.entries(dict).map(([key, value]) => (
+        <View key={key}>
+          <TouchableOpacity onPress={handleReviewPressByStars} style={styles.headerItem}>
+          <View style={styles.reviewHeader}>
+
+            <Text style={{color:"white",paddingLeft:10,paddingRight:20}}>{value[0]}</Text>
+            <Icon style={{paddingRight:10}} name="users" size={30} color="white" />
+            <StarRating rating={key} size={20} />
+            <Icon style={{color:"white",paddingLeft:10,paddingRight:20}} name="users" size={30} color="white" />
+            <Text style={{color:"white"}}>{value[1]}</Text>
+          </View>
+          </TouchableOpacity>
+        </View>
+      ))}
+      <Text style={{color:"white",paddingTop:20}}>Click on the Star Rating to view reviews for each rating</Text>
+      <View style={styles.tagsContainer}>
+      {Object.entries(tagsDict).map(([key, value]) => (
+        <View key={key}>
+    <View style={styles.tag}>
+      <Text style={styles.tagText}>#{key} {value}</Text>
+        </View>
+        </View>
+  ))}
+</View>
+
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+    tagsContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        marginBottom: 20,
+      },
+      tag: {
+        backgroundColor: 'black',
+        borderColor: 'white',
+        borderWidth: 1,
+        borderRadius: 20,
+        paddingHorizontal: 10,
+        paddingVertical: 5,
+        marginRight: 10,
+        marginBottom: 10,
+      },
+      tagText: {
+        color: 'white',
+      },
     reviewCard: {
       backgroundColor: '#333',
       borderRadius: 10,
@@ -91,10 +155,10 @@ const styles = StyleSheet.create({
         color: 'white',
       },
       reviewHeaderTextLeft: {
-        marginLeft: 5, // Add some spacing between the first two items
+        marginLeft: 5, 
       },
       reviewHeaderTextRight: {
-        marginRight: 5, // Add some spacing between the last two items
+        marginRight: 5, 
       },
     reviewContent: {
       color: 'white',

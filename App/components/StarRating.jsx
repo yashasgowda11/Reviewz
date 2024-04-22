@@ -2,14 +2,17 @@ import React from 'react';
 import { View,StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating,size }) => {
+  if (!size){
+    size=50
+  }
   const renderStars = () => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       if (i <= rating) {
-        stars.push(<Icon name="star" size={50} color="yellow" key={i} style={styles.star} /> );
+        stars.push(<Icon name="star" size={size} color="yellow" key={i} style={styles.star} /> );
       } else {
-        stars.push(<Icon name="star-o" size={50} color="yellow" key={i} style={styles.star} />);
+        stars.push(<Icon name="star-o" size={size} color="yellow" key={i} style={styles.star} />);
       }
     }
     return stars;

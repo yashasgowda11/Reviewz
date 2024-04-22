@@ -13,8 +13,8 @@ const ClickedMovieAbout = ({ route }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const imageURI = imagePaths[movie.item.imageUrl];
   const navigation = useNavigation();
-
   console.log(movie)
+  
   const handleBackPress = () => {
     navigation.navigate('HOME');
   };
@@ -44,6 +44,7 @@ const ClickedMovieAbout = ({ route }) => {
        <Text style={{color:"white",textAlign:"left",paddingBottom:40}}>{movie.item.reviews.length} reviews</Text>
        <Rating />
        <MyScreen movie={movie}/>
+       
        <MoviesList title="Similarly Rated Movies" moviesList={[1,2,3,4,5]} renderMovie={(item) => renderMovie({ item,extradata:circularExtradata  })} moviesData={moviesData} />
        </View>
        </ScrollView>

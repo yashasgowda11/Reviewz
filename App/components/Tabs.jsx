@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 const MyTabs = ({ selectedTab, setSelectedTab }) => {
-    console.log(selectedTab)
   return (
     <View style={styles.tabContainer}>
       <TouchableOpacity
