@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MyTabs from './Tabs';
-
+import ReviewsScreen from './ReviewsScreen';
 const AboutScreen = ({movie}) => {
   return (
     <>
@@ -14,11 +14,7 @@ const AboutScreen = ({movie}) => {
   );
 };
 
-const ReviewsScreen = ({movie}) => {
-  return (
-    <Text  style={{color:"green"}}>ReviewsScreen</Text>
-  );
-};
+
 
 const CastScreen = ({ movie }) => {
   return (
