@@ -8,17 +8,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import MySlider from '../components/ImageSliderCard';
 
-
- const imagePaths = {
-  'rectangle-141.png': require('../assets/rectangle-141.png'),
-  'rectangle-142.png': require('../assets/rectangle-142.png'),
-  'rectangle-143.png': require('../assets/rectangle-143.png'),
-  'rectangle-144.png': require('../assets/rectangle-144.png'),
-  'rectangle-145.png': require('../assets/rectangle-145.png'),
-  'rectangle-146.png': require('../assets/rectangle-146.png'),
-};
-
- 
 const Home = () => {
   const navigation = useNavigation();
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -51,10 +40,7 @@ const circularExtradata={circular:true}
 const normalExtradata={circular:false}
   return (
     <>
-    
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
-     
-      
     <View style={styles.header}>
     <TouchableOpacity onPress={handleDrawerPress} style={styles.headerItem}>
           <Icon name="list" size={30} color="white" />
@@ -74,16 +60,16 @@ const normalExtradata={circular:false}
       <MoviesList title="Popular" moviesList={[1,2,3,4,5]} renderMovie={(item) => renderMovie({ item,extradata:circularExtradata  })} moviesData={moviesData} />
     </View>
     <View style={{backgroundColor:"black"}} >
-    <MoviesList title="Popular on Netflix" moviesList={[5,4,2,1,3]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
+    <MoviesList title="Popular on Netflix" moviesList={[6,7,8,9,10]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
     </View>
     <View style={{backgroundColor:"black"}}>
-    <MoviesList title="Top 10 in India Today" moviesList={[3,4,5]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
+    <MoviesList title="Top 10 in India Today" moviesList={[3,4,5,9]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
     </View>
     <View style={{backgroundColor:"black"}}>
-    <MoviesList title="My List" moviesList={[3,4]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
+    <MoviesList title="My List" moviesList={[10,7,3,4]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
     </View>
     <View style={{backgroundColor:"black"}}>
-    <MoviesList title="African Movies" moviesList={[4,5]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
+    <MoviesList title="African Movies" moviesList={[9,10,1,2]} renderMovie={(item) => renderMovie({ item,extradata:normalExtradata  })} moviesData={moviesData} />
     </View>
     </ScrollView>
     </>

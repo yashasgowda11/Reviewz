@@ -7,12 +7,12 @@ const MySlider = () => {
   const [position, setPosition] = useState(1);
 
   const images = [
-    require('../assets/rectangle-141.png'),
     require('../assets/rectangle-142.png'),
-    require('../assets/rectangle-143.png'),
     require('../assets/rectangle-144.png'),
-    require('../assets/rectangle-145.png'),
     require('../assets/rectangle-146.png'),
+    require('../assets/rectangle-148.png'),
+    require('../assets/rectangle-145.png'),
+    require('../assets/rectangle-151.png'),
   ];
 
   return (
