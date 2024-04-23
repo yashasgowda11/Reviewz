@@ -404,7 +404,7 @@ const ReviewsScreen = ({ movie }) => {
         />
       </View>
       <Text style={{ color: "white", textAlign: "left", paddingBottom: 40, fontSize: 35 }}>Distribution of Reviews</Text>
-      <View style={styles.chartContainer}>
+      <View style={styles.chartContainerPie}>
         <WebView
           originWhitelist={['*']}
           source={{ html: pieChartHTML }}
@@ -447,6 +447,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   chartContainer: {
+    height: 100,
+    width: '100%'
+  },
+  chartContainerPie: {
     height: 300,
     width: '100%'
   },
