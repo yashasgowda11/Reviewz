@@ -10,6 +10,8 @@ import { View,Image, Text, StyleSheet, FlatList,TouchableOpacity } from 'react-n
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
 import StarRating from './StarRating';
+import { WebView } from 'react-native-webview';
+
 const ReviewsScreen = ({ movie }) => {
     const navigation = useNavigation();
   const reviews = movie.item.reviews || []; 
@@ -19,6 +21,51 @@ const ReviewsScreen = ({ movie }) => {
   const handleReviewPress = (review) => {
     navigation.navigate('CLICKEDREVIEWS', { review,"title":movie.item.title,"image":movie.item.imageUrl });
   };
+
+  const chartHTML = `
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+      }
+      .bar-container {
+        width: 50%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .bar {
+        display: block;
+        width: 0;
+        height: 50px;
+        background-color: #3498db;
+        transition: width 2s;
+      }
+    </style>
+    <title>Bar Chart</title>
+  </head>
+  <body>
+    <div class="bar-container">
+      <div class="bar" style="width: 85%;"></div> <!-- Example value: 85% -->
+    </div>
+    <script>
+      // If needed, you can add JavaScript here to manipulate the bar chart
+    </script>
+  </body>
+  </html>
+  `;
+
   const renderReviewCard = ({ item }) => {
     return (
         <>
@@ -92,6 +139,13 @@ movie.item.reviews.forEach(review => {
         showsVerticalScrollIndicator={false} 
       />
       <Text style={{color:"white",textAlign:"left",paddingBottom:40,fontSize:35}}>Overall Rating</Text>
+      <View style={styles.chartContainer}>
+          <WebView
+            originWhitelist={['*']}
+            source={{ html: chartHTML }}
+            style={styles.chart}
+          />
+        </View>
        {Object.entries(dict).map(([key, value]) => (
         <View key={key}>
           <TouchableOpacity onPress={()=>handleReviewPressByStars(movie,key)} style={styles.headerItem}>
@@ -122,6 +176,18 @@ movie.item.reviews.forEach(review => {
 };
 
 const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    chartContainer: {
+      height: 300,
+      width: '100%'
+    },
+    chart: {
+      flex: 1
+    },
     tagsContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
