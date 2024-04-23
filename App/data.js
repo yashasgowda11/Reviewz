@@ -35,7 +35,7 @@ export const moviesData=[{
         },
         {
             "id":3,
-            "name": "yashaswini",
+            "name": "reviewz",
             "type": "critic",
             "data": "",
             "spoilerTag":true,
@@ -110,7 +110,7 @@ export const moviesData=[{
     "reviews":[
         {
             "id":1,
-            "name": "yashas",
+            "name": "reviewz",
             "type": "critic",
             "data": "",
             "spoilerTag":true,
@@ -221,8 +221,8 @@ export const moviesData=[{
         },
         {
             "id":2,
-            "name": "ben",
-            "type": "viewer",
+            "name": "reviewz",
+            "type": "critic",
             "data": "",
             "spoilerTag":false,
             "review":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -321,8 +321,8 @@ export const moviesData=[{
         },
         {
             "id":2,
-            "name": "ben",
-            "type": "viewer",
+            "name": "reviewz",
+            "type": "critic",
             "data": "",
             "spoilerTag":false,
             "review":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -420,8 +420,8 @@ export const moviesData=[{
         },
         {
             "id":2,
-            "name": "ben",
-            "type": "viewer",
+            "name": "reviewz",
+            "type": "critic",
             "data": "",
             "spoilerTag":false,
             "review":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -567,8 +567,8 @@ export const moviesData=[{
         },
         {
             "id":6,
-            "name": "ben",
-            "type": "viewer",
+            "name": "reviewz",
+            "type": "critic",
             "data": "",
             "spoilerTag":false,
             "review":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -654,7 +654,7 @@ export const moviesData=[{
         },
         {
             "id":5,
-            "name": "yashas",
+            "name": "reviewz",
             "type": "critic",
             "data": "",
             "spoilerTag":true,
@@ -741,7 +741,7 @@ export const moviesData=[{
         },
         {
             "id":4,
-            "name": "puneeth",
+            "name": "reviewz",
             "type": "viewer",
             "data": "",
             "spoilerTag":false,
@@ -991,18 +991,6 @@ export const moviesData=[{
 },
 ]
 
-export  const myMovieList=[3,6]
-
-export const recentlyViewedList=[]
-// export const imagePaths = {
-//     'rectangle-141.png': require('./assets/rectangle-141.png'),
-//     'rectangle-142.png': require('./assets/rectangle-142.png'),
-//     'rectangle-143.png': require('./assets/rectangle-143.png'),
-//     'rectangle-144.png': require('./assets/rectangle-144.png'),
-//     'rectangle-145.png': require('./assets/rectangle-145.png'),
-//     'rectangle-146.png': require('./assets/rectangle-146.png'),
-//   };
-
   export const imagePaths = {
     'rectangle-141.png': require('./assets/rectangle-141.png'),
     'rectangle-142.png': require('./assets/rectangle-142.png'),
@@ -1015,3 +1003,27 @@ export const recentlyViewedList=[]
     'rectangle-149.png': require('./assets/rectangle-149.png'),
     'rectangle-151.png': require('./assets/rectangle-151.png'),
   };
+
+  export const profiles =[
+    {
+        "id":1,
+        "name": "puneeth",
+        "List":[1,3,5,7]
+    },
+    {
+        "id":2,
+        "name": "ben",
+        "List":[2,4,6,7]
+    },
+    {
+        "id":3,
+        "name": "yashas",
+        "List":[6,8,9,10]
+    },
+    {
+        "id":4,
+        "name": "yashaswini",
+        "List":[1,2,3,4]
+    }
+    
+  ]

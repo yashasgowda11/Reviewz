@@ -20,7 +20,7 @@ const DASHBOARD1 = () => {
       <View style={styles.content}>
         <Pressable
           style={[styles.item, styles.myProfile]}
-          onPress={() => navigation.navigate('MYPROFILE')}
+          onPress={() => navigation.navigate('MYPROFILE',{name:"reviewz",type:"critic"})}
         >
           <Text style={styles.text}>My Profile</Text>
         </Pressable>

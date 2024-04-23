@@ -65,7 +65,7 @@ const REVIEW = () => {
       </View>
       <Pressable
         style={[styles.arrowLeftLarge, styles.controllerIconLayout]}
-        onPress={() => navigation.navigate("CLICKEDMOVIEABOUT")}
+        onPress={() => navigation.goBack()}
       >
         <Image
           style={[styles.icon1, styles.iconLayout1]}

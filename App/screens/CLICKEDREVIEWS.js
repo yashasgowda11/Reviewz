@@ -17,7 +17,9 @@ const CLICKEDREVIEWS = ({route}) => {
   const handleHomePress = () => {
     navigation.navigate("HOME")
   }
-
+  const handleProfilePress=(name,type)=>{
+    navigation.navigate('MYPROFILE',{name,type});
+  }
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -33,9 +35,13 @@ const CLICKEDREVIEWS = ({route}) => {
         <View style={styles.contentContainer}>
           <Image style={{ width: "100%", height: 250 }} source={imageURI} />
           <View style={styles.reviewHeader}>
+          <TouchableOpacity onPress={()=>handleProfilePress(review.name,review.type)} style={styles.headerItem}>
             <Icon name="user" size={50} color="white" />
+            </TouchableOpacity>
             <View style={styles.textContainer}>
+            <TouchableOpacity onPress={()=>handleProfilePress(review.name,review.type)} style={styles.headerItem}>
               <Text style={styles.headerText}>{review.name}</Text>
+              </TouchableOpacity>
               <Text style={styles.headerText}>{review.type}</Text>
             </View>
             <View style={styles.voteContainer}>

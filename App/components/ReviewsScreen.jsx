@@ -84,9 +84,9 @@ movie.item.reviews.forEach(review => {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.screenTitle}>ReviewsScreen</Text>
+      <Text style={{color:"white",fontSize:30,paddingBottom:20,paddingTop:20}}>Popular Reviews</Text>
       <FlatList
-        data={reviews}
+        data={reviews.slice(0, 3)}
         renderItem={renderReviewCard}
         keyExtractor={(item, index) => index.toString()} 
         showsVerticalScrollIndicator={false} 
