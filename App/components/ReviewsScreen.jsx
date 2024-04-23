@@ -114,42 +114,48 @@ movie.item.reviews.forEach(review => {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #000;
-        color: #fff;
+        background-color: #0e0e0e; 
+        color: #fff; /* White text color */
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
       }
       .bar-container {
         width: 80%;
-        background-color: #555;
-        border-radius: 10px;
+        height: 40px; 
+        background-color: #1c1c1e; 
+        border-radius: 20px; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
         overflow: hidden;
         position: relative;
+        transition: all 0.5s ease; 
       }
       .bar {
-        display: block;
-        width: ${percentageValue}%; /* Width set according to the percentage */
-        height: 50px;
-        background-color: #3498db;
-        transition: width 2s;
+        width: 0%; 
+        height: 100%;
+        line-height: 40px; 
+        background-color: #21d07a; 
+        border-radius: 20px; 
         text-align: center;
-        line-height: 50px; /* Aligns the text vertically */
-        color: #fff;
+        transition: width 2s ease-in-out; 
       }
-      .percentage-label {
-        position: absolute;
+      .bar span {
+        display: inline-block;
         width: 100%;
-        text-align: center;
-        font-size: 20px;
-        line-height: 50px; /* Aligns the text vertically */
+        color: #fff; 
+        z-index: 2;
+        position: relative;
       }
     </style>
-    <title>Bar Chart</title>
   </head>
   <body>
     <div class="bar-container">
-      <div class="bar">${percentageValue}%</div> <!-- Bar with the percentage value displayed -->
+      <div class="bar" style="width: ${percentageValue}%;"><span>${percentageValue}%</span></div>
     </div>
     <script>
-      // If needed, you can add JavaScript here to manipulate the bar chart
+      document.addEventListener('DOMContentLoaded', (event) => {
+        setTimeout(() => {
+          document.querySelector('.bar').style.width = '${percentageValue}%';
+        }, 100);
+      });
     </script>
   </body>
   </html>
