@@ -22,6 +22,8 @@ const ReviewsScreen = ({ movie }) => {
     navigation.navigate('CLICKEDREVIEWS', { review,"title":movie.item.title,"image":movie.item.imageUrl });
   };
 
+   percentageValue = 78; // Example percentage value
+
   const chartHTML = `
   <!DOCTYPE html>
   <html lang="en">
@@ -38,26 +40,38 @@ const ReviewsScreen = ({ movie }) => {
         justify-content: center;
         align-items: center;
         background-color: #000;
+        color: #fff;
       }
       .bar-container {
-        width: 50%;
-        background-color: #fff;
+        width: 80%;
+        background-color: #555;
         border-radius: 10px;
         overflow: hidden;
+        position: relative;
       }
       .bar {
         display: block;
-        width: 0;
+        width: ${percentageValue}%; /* Width set according to the percentage */
         height: 50px;
         background-color: #3498db;
         transition: width 2s;
+        text-align: center;
+        line-height: 50px; /* Aligns the text vertically */
+        color: #fff;
+      }
+      .percentage-label {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px; /* Aligns the text vertically */
       }
     </style>
     <title>Bar Chart</title>
   </head>
   <body>
     <div class="bar-container">
-      <div class="bar" style="width: 85%;"></div> <!-- Example value: 85% -->
+      <div class="bar">${percentageValue}%</div> <!-- Bar with the percentage value displayed -->
     </div>
     <script>
       // If needed, you can add JavaScript here to manipulate the bar chart
@@ -65,7 +79,7 @@ const ReviewsScreen = ({ movie }) => {
   </body>
   </html>
   `;
-
+  
   const renderReviewCard = ({ item }) => {
     return (
         <>
