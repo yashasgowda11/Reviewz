@@ -79,8 +79,8 @@ movie.item.reviews.forEach(review => {
 });
 
   console.log(tagsDict)
-  const handleReviewPressByStars=()=>{
-    navigation.navigate("CRITICRATINGS")
+  const handleReviewPressByStars=(movie,key)=>{
+    navigation.navigate("STARREVIEWS",{movie,key})
   }
   return (
     <View style={styles.container}>
@@ -94,7 +94,7 @@ movie.item.reviews.forEach(review => {
       <Text style={{color:"white",textAlign:"left",paddingBottom:40,fontSize:35}}>Overall Rating</Text>
        {Object.entries(dict).map(([key, value]) => (
         <View key={key}>
-          <TouchableOpacity onPress={handleReviewPressByStars} style={styles.headerItem}>
+          <TouchableOpacity onPress={()=>handleReviewPressByStars(movie,key)} style={styles.headerItem}>
           <View style={styles.reviewHeader}>
 
             <Text style={{color:"white",paddingLeft:10,paddingRight:20}}>{value[0]}</Text>

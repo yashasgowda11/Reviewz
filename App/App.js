@@ -32,6 +32,7 @@ import Onboarding1 from './screens/Onboarding1';
 import Onboarding2 from './screens/Onboarding2';
 import Onboarding3 from './screens/Onboarding3';
 import CRITICRATINGS from './screens/CRITICRATINGS';
+import StarReviews from './components/StarReviews';
 
 const Stack = createNativeStackNavigator();
 
@@ -76,6 +77,7 @@ const App = () => {
               component={CLICKEDMOVIECAST}
             />
             <Stack.Screen name="REVIEW" component={REVIEW} />
+            <Stack.Screen name="STARREVIEWS" component={StarReviews} />
             <Stack.Screen
               name="SUBMITTEDREVIEW"
               component={SUBMITTEDREVIEW}
