@@ -50,13 +50,13 @@ In response to the feedback, significant enhancements were made to the Mid-Fi pr
 ### Installation
 
 Clone the repository using:
--- 'git clone https://github.com/yashasgowda11/Reviewz'
+-- `git clone https://github.com/yashasgowda11/Reviewz`
 
 Navigate to the project directory and install the required dependencies:
--- 'npm install'
+-- `npm install`
 
 Start the application:
--- 'npx expo start'
+-- `npx expo start`
 
 ### Dependencies
 
